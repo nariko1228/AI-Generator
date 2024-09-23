@@ -7,39 +7,46 @@
     <title>AI Generator</title>
   </head>
   <body>
-    <header>AI Chinese Poem Generator</header>
+    <div class="container">
+      <header>
+        <h1>AI Chinese Poem Generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        红豆生南国，<br />
-        春来发几枝？<br />
-        愿君多采撷，<br />
-        此物最相思。<br />
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic"
+            autofocus
+            required
+            autocomplete="off"
+            class="topic"
+          />
+          <input type="submit" class="button" />
+        </form>
+        <div class="poem">
+          红豆生南国，<br />
+          春来发几枝？<br />
+          愿君多采撷，<br />
+          此物最相思。<br />
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/nariko1228/" target="_blank">Carey Phang</a>
-      and is open-sourced on
-      <a href="https://github.com/nariko1228?tab=repositories/" target="_blank"
-        >Github</a
-      >
-      and is hosted by
-      <a href="https://carey-ai-generator.netlify.app/" target="_blank"
-        >Netlify</a
-      >.
-    </footer>
-    <script src="src/index.js"></script>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/nariko1228/" target="_blank">Carey Phang</a>
+        and is open-sourced on
+        <a
+          href="https://github.com/nariko1228?tab=repositories/"
+          target="_blank"
+          >Github</a
+        >
+        and is hosted by
+        <a href="https://carey-ai-generator.netlify.app/" target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>
