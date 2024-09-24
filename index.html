@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Generator</title>
   </head>
   <body>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic"
@@ -24,12 +25,7 @@
           />
           <input type="submit" class="button" />
         </form>
-        <div class="poem">
-          红豆生南国，<br />
-          春来发几枝？<br />
-          愿君多采撷，<br />
-          此物最相思。<br />
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
