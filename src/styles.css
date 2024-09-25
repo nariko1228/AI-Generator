@@ -21,11 +21,7 @@ h1 {
 }
 
 form {
-  padding: 30px;
-  background-color: white;
-  border-radius: 10px;
   display: flex;
-  margin-bottom: 30px;
 }
 
 .topic {
@@ -48,9 +44,25 @@ form {
 }
 
 .poem {
-  font-size: 50px;
+  font-size: 20px;
   padding: 20px;
-  line-height: 80px;
+  line-height: 40px;
+  display: flex;
+}
+
+.form-container {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 10px;
+  text-align: left;
 }
 
 footer {
@@ -60,4 +72,17 @@ footer {
 
 a {
   color: blue;
+}
+
+.loading {
+  width: fit-content;
+  font-size: 20px;
+  clip-path: inset(0 1ch 0 0);
+  animation: l4 1s steps(4) infinite;
+}
+
+@keyframes l4 {
+  to {
+    clip-path: inset(0 -1ch 0 0);
+  }
 }
